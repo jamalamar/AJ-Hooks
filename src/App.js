@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Second from './components/second.js'
 
 function App() {
   
@@ -15,8 +14,7 @@ function App() {
     <div className="App">
 
       <p>My name is: {dog}</p>
-      <button onClick={()=> changeDog()}>DOG</button>
-
+        <Second changeDog={changeDog}/>
     </div>
   );
 }
